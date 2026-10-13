@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Campus Club Membership</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="Home">Home</a>
+        <a href="Event">Event</a>
+        <a href="Join">Join</a>
+    </div>
+  <h1>Programming Club</h1>
+    <style>
+    h1{
+        text-align: center;
+        color: rebeccapurple;
+    }
+    .topnav{
+          background-color: black;
+          padding: 14px;
+          position: sticky;
+          
+    }
+    a{
+        color: azure;
+       
+    }
+a:hover {
+  background-color: gray;
+  font-size: 16px;
+}
+
+.card{
+    width: 400px;
+    text-align: left;
+    margin: auto;
+    padding: 15px;
+    border: solid 2px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px gray;
+    position: relative;
+
+} 
+div > h2 {
+    font-weight: bold ;
+    color: green
+}
+div p{
+    font-style: italic;
+}
+.badge{
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;;
+    right: 8px;
+   
+}
+
+
+    </style>
+
+<div class="card">
+    <div>
+ <h2>Club Membership</h2></div>
+ <p>Join the programming club to take part in contests,workshops and weekly meetups</p>
+ <span class="badge">NEW</span>
+</div>
+
+<form action="" method="post">
+<fieldset>
+    <legend>Join the Club</legend>
+<div>
+    <label for="Full name">Full Name:</label>
+    <input type="text" name="Full name" id="fname" required>
+    </div>
+    <div>
+        <label for="Email">Email:</label>
+    <input type="email" name="Email" id="email" required>
+</div>
+
+<div>
+     <label for="Student_Id">Student_Id:</label>
+    <input type="number" name="Em" id="sid" placeholder="24-56789-1" pattern="[0-9]{2}-[0-9]{5}-[0-9]" required>
+
+
+</div>
+
+    <div>
+        <label for="age">Age:</label>
+    <input type="number" name="age" id="age" min="17" max="40" required>
+</div>
+
+    <div>
+        <label for="">Membership Type:</label>
+        <label for="general">General</label>
+        <input type="radio" name="mt">
+        <label for="Executive">Executive</label>
+        <input type="radio" name="mt">
+   </div>
+<div>
+   <label for="preferclub">Preferred Club:</label>
+   <select name="preferclub" id="pc" required>
+   <option value="selectaclub">Select a club</option>
+   <option value="prog">Programming</option>
+   <option value="robo">Robotics</option>
+   <option value="deb">Debate</option>
+
+   <div>
+    <label for="question">Why do you want to join?</label>
+    <textarea name="ans" id="tarea" required maxlength="200"></textarea>
+   </div>
+
+</select>
+</div>
+</fieldset>
+
+</form>
+
+
+
+</body>
+</html>
